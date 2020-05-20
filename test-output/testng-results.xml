@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3129" started-at="2020-05-15T18:36:55Z" finished-at="2020-05-15T18:36:58Z">
+  <suite name="Default suite" duration-ms="2632" started-at="2020-05-19T08:38:57Z" finished-at="2020-05-19T08:39:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3129" started-at="2020-05-15T18:36:55Z" finished-at="2020-05-15T18:36:58Z">
-      <class name="RESTBDDTests.GETTest">
-        <test-method status="PASS" signature="getTest()[pri:0, instance:RESTBDDTests.GETTest@5e5792a0]" name="getTest" duration-ms="3084" started-at="2020-05-15T18:36:55Z" finished-at="2020-05-15T18:36:58Z">
+    <test name="Default test" duration-ms="2632" started-at="2020-05-19T08:38:57Z" finished-at="2020-05-19T08:39:00Z">
+      <class name="RESTBDDTests.DiffBetweenHeraderAndHeaders">
+        <test-method status="PASS" signature="headerTest()[pri:0, instance:RESTBDDTests.DiffBetweenHeraderAndHeaders@4563e9ab]" name="headerTest" duration-ms="2602" started-at="2020-05-19T14:08:57Z" finished-at="2020-05-19T14:09:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTest -->
-      </class> <!-- RESTBDDTests.GETTest -->
+        </test-method> <!-- headerTest -->
+        <test-method status="PASS" signature="headersTest()[pri:0, instance:RESTBDDTests.DiffBetweenHeraderAndHeaders@4563e9ab]" name="headersTest" duration-ms="0" started-at="2020-05-19T14:09:00Z" finished-at="2020-05-19T14:09:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headersTest -->
+      </class> <!-- RESTBDDTests.DiffBetweenHeraderAndHeaders -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

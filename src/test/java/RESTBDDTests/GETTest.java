@@ -19,16 +19,20 @@ public class GETTest {
 
 				given()
 						// .log().all()
-						.when().get().
-						then().statusCode(200).statusLine("HTTP/1.1 200 OK")
-						//.body("City", equalTo("Hyderabad")).and()
-					//	.header("Content-Type", "application/json")
+				.when()
+					.get()
+				.then().statusCode(200).statusLine("HTTP/1.1 200 OK")
+//						.body("City", equalTo("Hyderabad")).and()
+						.header("Content-Type", "application/json;charset=utf-8")
 						.extract()
 						.response();
 		// .log().all()
 
-		String bodynode=resp.jsonPath().get("id");
-		System.out.println(bodynode);
+		
+		String bodynode=resp.jsonPath().get("data.id[1]").toString();
+		System.out.println("body node is : "+bodynode);
+		String contEndod=resp.header("content-encoding").toString();
+		System.out.println("Content Encoding is : "+contEndod);
 		
 		
 	}
